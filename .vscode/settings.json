@@ -1,0 +1,9 @@
+{
+  "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",  // expanded / nested / compact / compressed の4つから選択可
+            "extensionName": ".css", // .css拡張子で出力
+            "savePath": "~./"  // .scssファイルからの相対的な出力先のフォルダを指定
+        }
+    ],
+}
