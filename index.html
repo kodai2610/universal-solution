@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="wrapper" id="wrapper">
-    <header class="header fadeIn_animation">
+    <header class="header fadeIn_animation forPc">
       <div class="header_inner">
         <nav class="header-nav">
           <ul class="menu">
@@ -41,6 +41,66 @@
         </a>
       </div>
     </header>
+    <!--mobile-->
+    <header class="headerSp fadeIn_animation forSp">
+      <div class="headerSp-inner">
+        <div class="headerSp-txtBox">
+          <div class="headerSp-ttl1"><img src="./images/headerSp-ttl@2x.png" alt=""></div>
+          <div class="headerSp-ttl2">Recruit site</div>
+        </div>
+      </div>
+      <button class="mobile-menu-icon" onclick="document.getElementById('wrapper').classList.toggle('menu-open');">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="mobile-menu">
+        <div class="mobile-menu__head">
+          <div class="mobile-menu__head__box">
+            <div class="headerSp-ttl1"><img src="./images/headerSp-ttl@2x.png" alt=""></div>
+            <div class="headerSp-ttl2">Recruit site</div>
+          </div>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__list">
+            <a href="#">
+              <span class="main-title">Message</span>
+            </a>
+          </li>
+          <li class="mobile-menu__list">
+            <a href="#"><span class="main-title">Service</span>
+            </a>
+          </li>
+          <li class="mobile-menu__list">
+            <a href="#">
+              <span class="main-title">Benefits</span>
+            </a>
+          </li>
+          <li class="mobile-menu__list">
+            <a href="#">
+              <span class="main-title">Environment</span>
+            </a>
+          </li>
+          <li class="mobile-menu__list">
+            <a href="#">
+              <span class="main-title">Employment</span>
+            </a>
+          </li>
+          <li class="mobile-menu__list">
+            <a href="#">
+              <span class="main-title">job description</span>
+            </a>
+          </li>
+        </ul>
+        <a class="mobile-menu__btn">
+          <span>Entry</span>
+        </a>
+        <div class="mobile-menu__toTop">コーポレートサイトへ</div>
+        <div class="mobile-menu__copy">©Copyright 2018-2021 GH Integration Co.,Ltd.</div>
+      </nav>
+      <div class="mobile-menu-bg"></div>
+    </header>
+
     <main class="main">
       <section class="top" id="top">
         <div class="top_wrap fadeIn_animation">
@@ -48,8 +108,8 @@
         <div class="white_mask fadeIn_animation">
           <div class="top_cont">
             <div class="pink_box">
-              <h2>少数精鋭だからこその魅力がたくさん!</h2>
-              <h2>エンジニアが働きやすい環境作りを重視!</h2>
+              <h2>少数精鋭だからこその<br class="forSp">魅力がたくさん!</h2>
+              <h2>エンジニアが働きやすい<br class="forSp">環境作りを重視!</h2>
             </div>
           </div>            
         </div>
@@ -91,11 +151,11 @@
           </h2>         
           <div class="service_list fadeIn_animation">
             <p class="service_details">
-              コンピュータシステム及びソフトウェアの企画・制作・開発・製造・販売・<br>
-              賃貸借・保守及び輸出入 ソフトウェア技術者の教育及び研修<br>
-              インターネットを利用した情報提供サービス インターネットによる<br>
-              ウェブサイトの企画・制作・運営及びコンサルティング<br>
-              ※あなたの経験や希望に合ったプロジェクトにアサインいたします。
+              コンピュータシステム及びソフトウェアの<br class="forSp">企画・制作・開発・製造・販売・<br class="forPc">
+              賃貸借・保守及び<br class="forSp">輸出入 ソフトウェア技術者の教育及び研修<br>
+              インターネットを利用した情報提供サービス・<br class="forSp">インターネットによる<br class="forPc">
+              ウェブサイトの企画・制作・<br class="forSp">運営及びコンサルティング<br>
+              ※あなたの経験や希望に合ったプロジェクトに<br class="forSp">アサインいたします。
             </p>
         </div>
         </div>

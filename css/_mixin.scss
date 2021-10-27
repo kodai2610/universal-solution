@@ -20,7 +20,11 @@
 
 
 $breakpoints: (
-  'sm': 'screen and (max-width: 767px)', 
+  'sm' : 'screen and (max-width: 768px)',
+  'mid2' : 'screen and (max-width: 600px)',
+  'mid' : 'screen and (max-width: 780px)',
+  'lg2' : 'screen and (max-width: 960px)',
+  'lg' : 'screen and (min-width: 769px)',
   // 'md': 'screen and (max-width: 1024px)', 
   // 'lg': 'screen and (max-width: 1439px)',
 ) !default;
@@ -30,5 +34,10 @@ $breakpoints: (
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
+}
+
+@function px_rem($target,$base) {
+  $per : $target / $base;
+  @return $per * 1rem;
 }
 

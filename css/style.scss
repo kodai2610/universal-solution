@@ -1,5 +1,6 @@
 @import "./mixin";
 
+
 $cBlack:black;
 $cPink:#E20057;
 $cWhite:#fff;
@@ -10,6 +11,13 @@ $cWhite:#fff;
 
 html {
   font-size: 16px;
+  @include bp('lg') {
+    font-size: 14px;
+  }
+  @include bp('lg2') {
+    font-size: 12px;
+  }
+
 }
 
 body {
@@ -21,6 +29,9 @@ body {
 .wrapper {
   overflow: hidden;
   min-width: 1280px;
+  @include bp('lg') {
+    min-width: 100%;
+  }
 }
 
 header {
@@ -47,6 +58,10 @@ header {
     border-radius: 35px;
     position: relative;
     margin: 0 auto;
+    @include bp('lg') {
+      min-width: 95%;
+      width: 95%;
+    }
     .header-nav {
       margin: 0 auto;
       ul {
@@ -61,9 +76,13 @@ header {
             color: #121212;
             span {                 
               transition: all 0.1s;
-                &:hover {
-                  opacity: 0.7;
-                }  
+              font-size: 16px;
+              @include bp('lg2') {
+                font-size: 14px;
+              }
+              &:hover {
+                opacity: 0.7;
+              }  
             }
           }
         }
@@ -182,7 +201,8 @@ header {
           flex-direction: column;
           h2 {
             font-weight: 500;
-            font-size: 36px;
+            // font-size: 36px;
+            font-size: 2rem;
           }
         }
       }
@@ -216,6 +236,10 @@ header {
     margin: 0 auto;
     padding: 6rem 0 10rem;
     margin-top: -3rem;
+    @include bp('lg') {
+      width: 90%;
+    }
+
     .inner {
       position: relative;
       .message_title {
@@ -254,7 +278,8 @@ header {
           }
           .message_title_en {
             color: $cPink;
-            font-size: 50px;
+            // font-size: 50px;
+            font-size: px_rem(50,16);
             padding-left: 40px;
           }
         }
@@ -264,6 +289,10 @@ header {
         top: 30%;
         left: 50%;
         transform: translateX(-50%);
+        font-size: 16px;
+        @include bp('lg') {
+          font-size: 14px;
+        }
       }
       .message_img {
         display: flex;
@@ -271,6 +300,9 @@ header {
         width: 900px;
         margin: 0 auto;
         opacity: 0;
+        @include bp('lg') {
+          width: 100%;
+        }
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -310,8 +342,12 @@ header {
         p {
           padding: 1.9rem;
           font-size: 14px;
-          line-height: 34px;
+          // line-height: 34px;
+          line-height: (34 / 14);
           text-align: left;
+          @include bp('lg2') {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -338,6 +374,9 @@ header {
     .inner {
       width: 70%;
       margin: 0 auto;
+      @include bp('lg') {
+        width: 90%;
+      }
       .service_title {
         position: relative;
         z-index: 1;
@@ -372,8 +411,10 @@ header {
           }
           .service_title_en {
             color: $cPink;
-            font-size: 50px;
-            padding-left: 40px;
+            // font-size: 50px;
+            font-size: px_rem(50,16);
+            // padding-left: 40px;
+            padding-left: px_rem(40,16);
           }
         }
         .service_title_jp {
@@ -381,6 +422,10 @@ header {
           top: 30%;
           left: 50%;
           transform: translateX(-50%);
+          font-size: 16px;
+          @include bp('lg2') {
+            font-size: 14px;
+          }
         }
       }
       .service_list {
@@ -402,7 +447,11 @@ header {
         }
         p {
           font-size: 18px;
-          line-height: 36px;
+          line-height: (36 / 18);
+          // line-height: 36px;
+          @include bp('lg') {
+            font-size: 16px;
+          }
         }
       }
       &::before {
@@ -1370,3 +1419,5 @@ header {
     opacity: 1;
   }
 }
+
+@import "./sp";
