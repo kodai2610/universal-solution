@@ -8,6 +8,18 @@ html {
   font-size: 16px;
 }
 
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   margin: 0 auto;
   font-family: "Arial", "Yu Gothic", "游ゴシック",  sans-serif;
@@ -17,6 +29,12 @@ body {
 .wrapper {
   overflow: hidden;
   min-width: 1280px;
+}
+
+@media screen and (min-width: 769px) {
+  .wrapper {
+    min-width: 100%;
+  }
 }
 
 header {
@@ -62,6 +80,13 @@ header .header_inner {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 769px) {
+  header .header_inner {
+    min-width: 95%;
+    width: 95%;
+  }
+}
+
 header .header_inner .header-nav {
   margin: 0 auto;
 }
@@ -88,6 +113,13 @@ header .header_inner .header-nav ul li a {
 header .header_inner .header-nav ul li a span {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  header .header_inner .header-nav ul li a span {
+    font-size: 14px;
+  }
 }
 
 header .header_inner .header-nav ul li a span:hover {
@@ -254,7 +286,7 @@ header .header_inner .header_entry span::after {
 
 .main .top .white_mask .top_cont .pink_box h2 {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2rem;
 }
 
 .main .top .white_mask::before {
@@ -288,6 +320,12 @@ header .header_inner .header_entry span::after {
   margin: 0 auto;
   padding: 6rem 0 10rem;
   margin-top: -3rem;
+}
+
+@media screen and (min-width: 769px) {
+  .main .message {
+    width: 90%;
+  }
 }
 
 .main .message .inner {
@@ -347,7 +385,7 @@ header .header_inner .header_entry span::after {
 
 .main .message .inner .message_title .title_box_left .message_title_en {
   color: #E20057;
-  font-size: 50px;
+  font-size: 3.125rem;
   padding-left: 40px;
 }
 
@@ -357,6 +395,13 @@ header .header_inner .header_entry span::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  font-size: 16px;
+}
+
+@media screen and (min-width: 769px) {
+  .main .message .inner .message_title_jp {
+    font-size: 14px;
+  }
 }
 
 .main .message .inner .message_img {
@@ -371,6 +416,12 @@ header .header_inner .header_entry span::after {
   width: 900px;
   margin: 0 auto;
   opacity: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .main .message .inner .message_img {
+    width: 100%;
+  }
 }
 
 .main .message .inner .message_img.fadeIn_animation.fadeIn {
@@ -433,8 +484,14 @@ header .header_inner .header_entry span::after {
 .main .message .inner .message_text p {
   padding: 1.9rem;
   font-size: 14px;
-  line-height: 34px;
+  line-height: 2.42857;
   text-align: left;
+}
+
+@media screen and (max-width: 960px) {
+  .main .message .inner .message_text p {
+    font-size: 12px;
+  }
 }
 
 .main .service {
@@ -470,6 +527,12 @@ header .header_inner .header_entry span::after {
 .main .service .inner {
   width: 70%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+  .main .service .inner {
+    width: 90%;
+  }
 }
 
 .main .service .inner .service_title {
@@ -525,8 +588,8 @@ header .header_inner .header_entry span::after {
 
 .main .service .inner .service_title .title_box_left .service_title_en {
   color: #E20057;
-  font-size: 50px;
-  padding-left: 40px;
+  font-size: 3.125rem;
+  padding-left: 2.5rem;
 }
 
 .main .service .inner .service_title .service_title_jp {
@@ -535,6 +598,13 @@ header .header_inner .header_entry span::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  font-size: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .main .service .inner .service_title .service_title_jp {
+    font-size: 14px;
+  }
 }
 
 .main .service .inner .service_list {
@@ -568,7 +638,13 @@ header .header_inner .header_entry span::after {
 
 .main .service .inner .service_list p {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
+}
+
+@media screen and (min-width: 769px) {
+  .main .service .inner .service_list p {
+    font-size: 16px;
+  }
 }
 
 .main .service .inner::before {
@@ -1948,5 +2024,2064 @@ header .header_inner .header_entry span::after {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .forSp {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .forSp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .forPc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .forPc {
+    display: block !important;
+  }
+}
+
+/*@media screen and (max-width: 768px) {
+
+  
+}*/
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  html {
+    font-size: 10px;
+  }
+  .wrapper {
+    overflow: hidden;
+    width: 100%;
+    min-width: 100%;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    padding-top: 0;
+    opacity: 0;
+    background-color: #fff;
+  }
+  header.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  header .header_inner {
+    width: 84%;
+    min-width: 84%;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 35px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 769px) {
+  header .header_inner {
+    min-width: 95%;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header_inner .header-nav {
+    margin: 0 auto;
+  }
+  header .header_inner .header-nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  header .header_inner .header-nav ul li {
+    padding-right: 2.5rem;
+    cursor: pointer;
+  }
+  header .header_inner .header-nav ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #121212;
+  }
+  header .header_inner .header-nav ul li a span {
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 960px) {
+  header .header_inner .header-nav ul li a span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header_inner .header-nav ul li a span:hover {
+    opacity: 0.7;
+  }
+  header .header_inner .header_entry {
+    height: 65px;
+    width: 8rem;
+    background-color: #E20057;
+    text-decoration: none;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .header_inner .header_entry:hover {
+    background-color: black;
+    opacity: 0.8;
+  }
+  header .header_inner .header_entry span {
+    line-height: 65px;
+    color: #fff;
+    position: relative;
+    margin-left: -1rem;
+  }
+  header .header_inner .header_entry span::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/証明書アイコン@2x.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: .7rem;
+    vertical-align: baseline;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .headerSp {
+    height: 60px;
+  }
+  .headerSp-inner {
+    width: 84%;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerSp-ttl1 {
+    width: 23.3rem;
+  }
+  .headerSp-ttl2 {
+    color: #E20057;
+    font-size: 1.6rem;
+    padding-left: 6px;
+  }
+  .mobile-menu-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 18px;
+    right: 10px;
+    z-index: 1000;
+  }
+  .mobile-menu-icon > span {
+    background-color: #E20057;
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin-bottom: 9px;
+    -webkit-transition: -webkit-transform .7s;
+    transition: -webkit-transform .7s;
+    transition: transform .7s;
+    transition: transform .7s, -webkit-transform .7s;
+  }
+  .mobile-menu-icon > span:last-child {
+    margin-bottom: 0;
+  }
+  .mobile-menu {
+    -webkit-transform: translateX(105%);
+            transform: translateX(105%);
+    width: 90%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 900;
+    -webkit-box-shadow: 0 0 3px #00000029;
+            box-shadow: 0 0 3px #00000029;
+    -webkit-transition: -webkit-transform 0.7s ease 0s;
+    transition: -webkit-transform 0.7s ease 0s;
+    transition: transform 0.7s ease 0s;
+    transition: transform 0.7s ease 0s, -webkit-transform 0.7s ease 0s;
+  }
+  .mobile-menu__head {
+    margin: 0 auto;
+    width: 90%;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-menu__main {
+    width: 85%;
+    margin: 3rem auto 0;
+    list-style: none;
+  }
+  .mobile-menu__list {
+    border-bottom: 1px solid #E20057;
+  }
+  .mobile-menu__list > a {
+    color: #E20057;
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-decoration: none;
+  }
+  .mobile-menu__btn {
+    display: block;
+    width: 170px;
+    height: 53px;
+    margin: 18rem auto 0;
+    background-color: #E20057;
+    text-align: center;
+  }
+  .mobile-menu__btn > span {
+    font-size: 16px;
+    color: #fff;
+    line-height: 53px;
+    padding-right: 5px;
+    display: inline-block;
+  }
+  .mobile-menu__btn > span::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/証明書アイコン@2x.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  .mobile-menu__toTop {
+    margin-top: 3.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .mobile-menu__copy {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .mobile-menu-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 800;
+    display: none;
+  }
+  .menu-open .mobile-menu-icon > span:nth-child(1) {
+    -webkit-transform: translateY(11px) rotate(135deg);
+            transform: translateY(11px) rotate(135deg);
+  }
+  .menu-open .mobile-menu-icon > span:nth-child(2) {
+    -webkit-transform: translateX(-15px) scaleX(0);
+            transform: translateX(-15px) scaleX(0);
+  }
+  .menu-open .mobile-menu-icon > span:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(-135deg);
+            transform: translateY(-11px) rotate(-135deg);
+  }
+  .menu-open .mobile-menu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .menu-open .mobile-menu-bg {
+    display: block;
+  }
+  .main {
+    background-color: #F5F4F4;
+    padding-bottom: 7rem;
+    padding-top: 60px;
+  }
+  .main .top {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+  }
+  .main .top .top_wrap {
+    background-image: url(../images/グリッド@2x.png), url(../images/top_img@2x.png);
+    background-position: center, 25%;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .main .top .top_wrap.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn_tit_img;
+            animation-name: fadeIn_tit_img;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .top .top_wrap::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .main .top .white_mask {
+    z-index: 10;
+    opacity: 0.84;
+    width: 85%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: table;
+    background: -webkit-linear-gradient(315deg, transparent 25px, white 25px), -webkit-linear-gradient(135deg, transparent 25px, white 25px);
+    background: linear-gradient(135deg, transparent 25px, white 25px), linear-gradient(315deg, transparent 25px, white 25px);
+    background-position: top left, bottom right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+  .main .top .white_mask.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn_message_text;
+            animation-name: fadeIn_message_text;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .top .white_mask .top_cont {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .main .top .white_mask .top_cont .pink_box {
+    margin: 0 auto;
+    width: 95%;
+    height: 80%;
+    border: 1px #E20057 solid;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .top .white_mask .top_cont .pink_box h2 {
+    font-weight: 500;
+    font-size: 2.2rem;
+  }
+  .main .top .white_mask::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    background-color: #E20057;
+    position: absolute;
+    top: 8%;
+    left: -20px;
+    -webkit-transform: rotateZ(315deg);
+            transform: rotateZ(315deg);
+  }
+  .main .top .white_mask::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    background-color: #E20057;
+    position: absolute;
+    bottom: 8%;
+    right: -20px;
+    -webkit-transform: rotateZ(315deg);
+            transform: rotateZ(315deg);
+  }
+  .main .message {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10rem 0 8rem;
+  }
+  .main .message .inner {
+    width: 85%;
+    height: 70rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main .message .inner .message_title {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main .message .inner .message_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .message .inner .message_title .title_box_left .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .message .inner .message_title .title_box_left .pink_box_01 {
+    background-color: #E20057;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .main .message .inner .message_title .title_box_left .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 25%;
+    left: 8px;
+  }
+  .main .message .inner .message_title .title_box_left .message_title_en {
+    color: #E20057;
+    padding-left: 40px;
+    font-size: 4rem;
+  }
+  .main .message .inner .message_title_jp {
+    position: absolute;
+    top: 55%;
+    left: 21%;
+    -webkit-transform: none;
+            transform: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .main .message .inner .message_img {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    opacity: 1;
+  }
+  .main .message .inner .message_img.fadeIn_animation.fadeIn {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .main .message .inner .message_img .msg_img_01 {
+    position: absolute;
+    bottom: 0;
+    left: -90px;
+    opacity: 0;
+    width: 35rem;
+    height: auto;
+  }
+  .main .message .inner .message_img .msg_img_01.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .message .inner .message_img .msg_img_02 {
+    width: 30rem;
+    right: -80px;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+  }
+  .main .message .inner .message_img .msg_img_02.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .message .inner .message_text {
+    z-index: 20;
+    background-color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: auto;
+    opacity: 0;
+    width: 100%;
+  }
+  .main .message .inner .message_text.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn_message_text;
+            animation-name: fadeIn_message_text;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .message .inner .message_text p {
+    padding: 1.9rem;
+    font-size: 14px;
+    line-height: 2.42857;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 960px) {
+  .main .message .inner .message_text p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main .service {
+    background-image: url(../images/service_img@2x.png);
+    background-position: center,center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    padding: 6rem 0rem 0rem;
+    margin-top: 0rem;
+    opacity: 0;
+  }
+  .main .service.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn_tit_img;
+            animation-name: fadeIn_tit_img;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .service .inner {
+    width: 85%;
+    padding-bottom: 5rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 769px) {
+  .main .service .inner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main .service .inner .service_title {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main .service .inner .service_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .service .inner .service_title .title_box_left .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .service .inner .service_title .title_box_left .pink_box_01 {
+    background-color: #E20057;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .main .service .inner .service_title .title_box_left .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 25%;
+    left: 8px;
+  }
+  .main .service .inner .service_title .title_box_left .service_title_en {
+    color: #E20057;
+    font-size: 4rem;
+    padding-left: 40px;
+  }
+  .main .service .inner .service_title .service_title_jp {
+    position: absolute;
+    top: 55%;
+    left: 24%;
+    -webkit-transform: none;
+            transform: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .main .service .inner .service_list {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 10rem auto 0rem;
+    padding: 2rem 0;
+    border-top: 1px solid #E20057;
+    border-bottom: 1px solid #E20057;
+    text-align: center;
+    opacity: 0;
+  }
+  .main .service .inner .service_list.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .service .inner .service_list p {
+    font-size: 1.4rem;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 2;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .main .service .inner::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .main .benefits {
+    padding: 5rem 0 2rem;
+    margin-top: 0;
+  }
+  .main .benefits .inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main .benefits .inner .benefits_title {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+  }
+  .main .benefits .inner .benefits_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .benefits .inner .benefits_title .benefits_box_left {
+    position: relative;
+  }
+  .main .benefits .inner .benefits_title .benefits_box_left .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .benefits .inner .benefits_title .benefits_box_left .pink_box_01 {
+    background-color: #E20057;
+    position: absolute;
+    top: 60%;
+    left: 0;
+  }
+  .main .benefits .inner .benefits_title .benefits_box_left .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 50%;
+    left: 8px;
+  }
+  .main .benefits .inner .benefits_title .benefits_box_left .benefits_title_en {
+    color: #E20057;
+    font-size: 4rem;
+    padding-left: 40px;
+  }
+  .main .benefits .inner .benefits_title .benefits_title_jp {
+    position: absolute;
+    top: 100%;
+    left: 22%;
+    -webkit-transform: none;
+            transform: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .main .benefits .inner .benefits_list {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .main .benefits .inner .benefits_list .container {
+    padding-bottom: 3rem;
+  }
+  .main .benefits .inner .benefits_list .container img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    -webkit-box-shadow: 9px 8px 20px rgba(204, 204, 204, 0.75);
+            box-shadow: 9px 8px 20px rgba(204, 204, 204, 0.75);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content .benefits_number {
+    margin: 0 0 0 0;
+    width: 20%;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content .benefits_number h3 {
+    text-align: center;
+    font-size: 8rem;
+    color: #E20057;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content .benefits_text {
+    text-align: left;
+    width: 80%;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content .benefits_text h4 {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    position: relative;
+    padding-left: 6rem;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content .benefits_text h4 .check_box {
+    content: '';
+    width: 30px;
+    height: 10px;
+    border-left: 2px solid #E20057;
+    border-bottom: 2px solid #E20057;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content .benefits_text p {
+    width: 32rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid black;
+    margin: 0 0;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-right: 1rem;
+  }
+  .main .benefits .inner .benefits_list .container .benefits_content.benefits_content_03 .benefits_text p {
+    padding-bottom: 4rem;
+  }
+  .main .benefits .inner .benefits_list .benefits_box01 {
+    position: static;
+    opacity: 0;
+    margin: 0 auto;
+    max-width: 375px;
+  }
+  .main .benefits .inner .benefits_list .benefits_box01.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .benefits .inner .benefits_list .benefits_box01 .benefits_content_01 {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 375px;
+    padding-left: 0;
+  }
+  .main .benefits .inner .benefits_list .benefits_box02 {
+    position: static;
+    text-align: right;
+    opacity: 0;
+    margin: 0 auto;
+    max-width: 375px;
+  }
+  .main .benefits .inner .benefits_list .benefits_box02.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .benefits .inner .benefits_list .benefits_box02 .benefits_content_02 {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .main .benefits .inner .benefits_list .benefits_box03 {
+    position: static;
+    opacity: 0;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  .main .benefits .inner .benefits_list .benefits_box03.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .benefits .inner .benefits_list .benefits_box03 .benefits_content_03 {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    padding-left: 0rem;
+  }
+  .main .benefits .inner .benefits_details {
+    background-color: #fff;
+    padding: 2rem;
+  }
+  .main .benefits .inner .benefits_details > h2 {
+    text-align: center;
+  }
+  .main .benefits_examples {
+    background-color: #fff;
+  }
+  .main .benefits_examples .inner {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  .main .benefits_examples .inner > h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+  .main .benefits_examples .inner > h2.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .benefits_examples .inner .benefits_items {
+    display: block;
+    opacity: 0;
+  }
+  .main .benefits_examples .inner .benefits_items.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .benefits_examples .inner .benefits_items .benefit_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 16rem;
+    background: #fff;
+    -webkit-box-shadow: 1px 2px 13px rgba(116, 116, 116, 0.75);
+            box-shadow: 1px 2px 13px rgba(116, 116, 116, 0.75);
+    text-align: center;
+  }
+  .main .benefits_examples .inner .benefits_items .benefit_item .benefit_title {
+    font-size: 1.2rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.02em;
+    margin: 1.4rem 0;
+    padding-top: 2rem;
+  }
+  .main .benefits_examples .inner .benefits_items .benefit_item .benefit_title::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/グループ232@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 20px;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    vertical-align: baseline;
+    margin-right: .125rem;
+  }
+  .main .benefits_examples .inner .benefits_items .benefit_item .benefit_title::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/グループ232@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 20px;
+    vertical-align: baseline;
+    margin-left: .125rem;
+  }
+  .main .benefits_examples .inner .benefits_items .benefit_item p {
+    color: #4D4D4D;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  .main .benefits_examples .inner .benefits_items .benefit_item p span {
+    border-bottom: 1px solid #4D4D4D;
+    padding: 0 5px 1px;
+  }
+  .main .environment {
+    padding: 6rem 0 6rem;
+    margin-top: 0;
+  }
+  .main .environment .inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .main .environment .inner .environment_title {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0;
+    opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main .environment .inner .environment_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .environment .inner .environment_title .environment_box_left .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .environment .inner .environment_title .environment_box_left .pink_box_01 {
+    background-color: #E20057;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .main .environment .inner .environment_title .environment_box_left .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 25%;
+    left: 8px;
+  }
+  .main .environment .inner .environment_title .environment_box_left .environment_title_en {
+    color: #E20057;
+    font-size: 40px;
+    padding-left: 40px;
+    letter-spacing: -1.5px;
+  }
+  .main .environment .inner .environment_title .environment_title_jp {
+    position: absolute;
+    top: 55%;
+    left: 38%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .main .environment .inner .gallery {
+    opacity: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main .environment .inner .gallery.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .environment .inner .gallery .gallery-cell {
+    width: 70%;
+    max-width: 1300px;
+    height: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 2rem;
+  }
+  .main .environment .inner .gallery .gallery-cell img {
+    width: auto;
+    height: 250px;
+  }
+  .main .environment .inner .gallery .gallery-cell .environment_cont {
+    width: 100%;
+  }
+  .main .environment .inner .gallery .gallery-cell .environment_cont .cont_title {
+    background-color: #fff;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .main .environment .inner .gallery .gallery-cell .environment_cont .cont_text {
+    padding: 1.5rem;
+    line-height: 26px;
+  }
+  .main .environment .inner .gallery .environment_box_01 {
+    background-color: #E2E2E2;
+  }
+  .main .environment .inner .gallery .environment_box_02 {
+    background-color: #E2E2E2;
+  }
+  .main .environment .inner .gallery .environment_box_03 {
+    background-color: #E2E2E2;
+  }
+  .main .environment .inner .gallery .click_circle_left {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/btn@2x.png);
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    -webkit-transform: translateY(-50%) scale(-1, 1);
+            transform: translateY(-50%) scale(-1, 1);
+  }
+  .main .environment .inner .gallery .click_circle_right {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/btn@2x.png);
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: -8%;
+    -webkit-transform: translateY(-50%) scale(1, 1);
+            transform: translateY(-50%) scale(1, 1);
+  }
+  .main .employment {
+    background-color: #fff;
+    padding: 10rem 0 6rem;
+    margin-top: 0rem;
+    margin-bottom: -6rem;
+  }
+  .main .employment .inner {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .main .employment .inner .employment_title {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 40px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+    opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main .employment .inner .employment_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .employment .inner .employment_title .employment_box_left .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .employment .inner .employment_title .employment_box_left .pink_box_01 {
+    background-color: #E20057;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .main .employment .inner .employment_title .employment_box_left .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 25%;
+    left: 8px;
+  }
+  .main .employment .inner .employment_title .employment_box_left .employment_title_en {
+    color: #E20057;
+    font-size: 4rem;
+    padding-left: 40px;
+  }
+  .main .employment .inner .employment_title .employment_title_jp {
+    position: absolute;
+    top: 55%;
+    left: 32%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .main .employment .inner .employment_boxes {
+    width: 100%;
+    height: 55rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main .employment .inner .employment_boxes .employment_box {
+    width: 34rem;
+    height: 30rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .employment .inner .employment_boxes .employment_box .container {
+    margin: 3rem;
+  }
+  .main .employment .inner .employment_boxes .employment_box .container .employment_box_title {
+    margin-bottom: 2rem;
+  }
+  .main .employment .inner .employment_boxes .employment_box .container .employment_box_title .employment_content span {
+    font-size: 4.5rem;
+    margin-right: 2rem;
+    font-family: "Acumin Pro";
+  }
+  .main .employment .inner .employment_boxes .employment_box .container .employment_box_title .employment_content > p {
+    font-size: 1.6rem;
+    display: inline-block;
+  }
+  .main .employment .inner .employment_boxes .employment_box .container .employment_text {
+    line-height: 1.71429;
+    font-size: 1.4rem;
+  }
+  .main .employment .inner .employment_boxes .employment_box.employment_box01 {
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    z-index: 1;
+    color: #646464;
+    opacity: 0;
+    top: 0;
+    left: -3rem;
+  }
+  .main .employment .inner .employment_boxes .employment_box.employment_box01.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .employment .inner .employment_boxes .employment_box.employment_box02 {
+    background-color: #E20057;
+    color: #fff;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    right: -3rem;
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+    opacity: 0;
+  }
+  .main .employment .inner .employment_boxes .employment_box.employment_box02.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .jobDescription {
+    width: 100%;
+    padding: 6rem 0 3rem;
+    margin-top: -3rem;
+  }
+  .main .jobDescription .inner .jobDescription_title {
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-color: #E20057;
+    opacity: 0;
+  }
+  .main .jobDescription .inner .jobDescription_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn_tit_img;
+            animation-name: fadeIn_tit_img;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .jobDescription .inner .jobDescription_title .title_box {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+  }
+  .main .jobDescription .inner .jobDescription_title .title_box .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .jobDescription .inner .jobDescription_title .title_box .white_box {
+    background-color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .jobDescription .inner .jobDescription_title .title_box .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 40%;
+    left: 8px;
+  }
+  .main .jobDescription .inner .jobDescription_title .title_box .jobDescription_title_en {
+    color: #fff;
+    font-size: 40px;
+    height: 100%;
+    line-height: 1;
+    padding-left: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .jobDescription .inner .job_info {
+    max-width: 960px;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 0;
+  }
+  .main .jobDescription .inner .job_info.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .jobDescription .inner .job_info .job_title {
+    text-align: center;
+    padding: 4rem 0 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .main .jobDescription .inner .job_info .job_info_details > dl {
+    border-bottom: 1px solid #DEDADA;
+    padding: 1.5rem 0;
+    font-size: .875rem;
+    display: block;
+    color: #707070;
+    margin: 0 auto;
+  }
+  .main .jobDescription .inner .job_info .job_info_details > dl > dt {
+    line-height: 1.4285rem;
+    width: 100%;
+    padding: 0 0 0 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .main .jobDescription .inner .job_info .job_info_details > dl > dd {
+    margin-top: 1.5rem;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .main .entry {
+    padding: 6rem 0 2rem;
+    margin-top: -3rem;
+  }
+  .main .entry .inner .entry_title {
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-color: #E20057;
+    opacity: 0;
+  }
+  .main .entry .inner .entry_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn_tit_img;
+            animation-name: fadeIn_tit_img;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .entry .inner .entry_title .title_box {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main .entry .inner .entry_title .title_box .pink_box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .entry .inner .entry_title .title_box .white_box {
+    background-color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .main .entry .inner .entry_title .title_box .pink_box_02 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20057), color-stop(50%, #fff), to(#FF9AC0));
+    background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
+    background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
+    position: absolute;
+    top: 40%;
+    left: 8px;
+  }
+  .main .entry .inner .entry_title .title_box .entry_title_en {
+    color: #fff;
+    line-height: 150px;
+    padding-left: 4rem;
+    font-size: 40px;
+  }
+  .main .entry .inner .entry_form_title {
+    text-align: center;
+    padding: 5rem 0 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    opacity: 0;
+  }
+  .main .entry .inner .entry_form_title.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .entry .inner .entry_desc {
+    width: 85%;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #707070;
+    opacity: 0;
+    margin: 0 auto;
+    letter-spacing: 0.08em;
+    font-size: 1.4rem;
+    line-height: 1.42857;
+  }
+  .main .entry .inner .entry_desc.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .entry .inner .entry_form {
+    width: 85%;
+    margin: 0 auto;
+    opacity: 0;
+  }
+  .main .entry .inner .entry_form.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .main .entry .inner .entry_form .frmWrap {
+    margin: 0 auto 2.8rem;
+    max-width: 1200px;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup {
+    margin-bottom: 2rem;
+    display: block;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_label {
+    width: 100%;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    color: #707070;
+    font-size: 1.4rem;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input input {
+    padding: 0 2rem;
+    height: 3.1rem;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input textarea {
+    padding: 2rem;
+    height: 20rem;
+    resize: vertical;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input textarea, .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input input {
+    display: block;
+    width: 100%;
+    background: #EDEDED;
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    outline-offset: 0;
+    outline: none;
+    font-size: .75rem;
+    color: #999999;
+  }
+  .main .entry .inner .entry_form .frmWrap .frmGroup .file_select input {
+    background-color: transparent;
+    padding: 0;
+    color: black;
+  }
+  .main .entry .inner .entry_form .frm_rules {
+    max-width: 40rem;
+    background-color: #fff;
+    margin: 0 auto 3.3rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+    -webkit-box-shadow: 0.2rem 0.2rem 0.4rem #b3b3b3;
+            box-shadow: 0.2rem 0.2rem 0.4rem #b3b3b3;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 17.5rem;
+    overflow: hidden;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules {
+    width: 100%;
+    height: 17.5rem;
+    padding: 0 1rem 0 0;
+    background-color: #fff;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules::-webkit-scrollbar {
+    display: none;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules .frm_cont {
+    padding-right: 0.4rem;
+    color: #4D4D4D;
+    font-size: 0.875em;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules .frm_cont > p {
+    padding-bottom: 1rem;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules .frm_cont > p:nth-child(5) {
+    padding-bottom: 3rem;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules .frm_cont > p:nth-child(11) {
+    padding-bottom: 3rem;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .bx_rules .frm_cont > p span {
+    float: right;
+  }
+  .main .entry .inner .entry_form .frm_rules .scrollable .scroller {
+    top: 41.0429px;
+    z-index: 5;
+    cursor: pointer;
+    position: absolute;
+    width: 0.5rem;
+    background: #808080;
+    top: 0;
+    border-radius: 999px;
+    right: 0;
+  }
+  .main .entry .inner .entry_form .privacy {
+    text-align: center;
+    margin-bottom: 4.1rem;
+  }
+  .main .entry .inner .entry_form .privacy .privacy_box {
+    display: inline-block;
+    position: relative;
+  }
+  .main .entry .inner .entry_form .privacy .privacy_box input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    position: absolute;
+  }
+  .main .entry .inner .entry_form .privacy .privacy_box label {
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 2rem;
+  }
+  .main .entry .inner .entry_form .privacy .privacy_box label::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #E2E2E2;
+    top: 0.1rem;
+    left: 0;
+    content: "";
+    visibility: visible;
+    border: 1px solid #bdbdbd;
+    position: absolute;
+  }
+  .main .entry .inner .entry_form .privacy .privacy_box label::after {
+    width: 0.3rem;
+    height: 0.8rem;
+    top: 0.2rem;
+    left: 0.4rem;
+    content: "";
+    visibility: visible;
+    position: absolute;
+    opacity: 0;
+    border-right: 0.2rem solid #E6042F;
+    border-bottom: 0.2rem solid #E6042F;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .main .entry .inner .entry_form .privacy .privacy_box input:checked ~ label:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .main .entry .inner .entry_form .btn_txt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 16rem;
+    height: 4.7rem;
+    margin: 0 auto;
+    background: #E20057;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline-offset: 0;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .main .entry .inner .entry_form .btn_txt:hover {
+    background-color: black;
+    opacity: 0.8;
+  }
+  .main .entry .inner .entry_form .btn_txt:hover::after {
+    -webkit-transform: translateX(0.4rem);
+            transform: translateX(0.4rem);
+  }
+  .main .entry .inner .entry_form .btn_txt::after {
+    content: ">";
+    margin-left: 1rem;
+    display: block;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  .main .entry .inner .entry_form .btn_txt::after:hover {
+    margin-left: 2rem;
+  }
+  .footer .inner {
+    width: 100%;
+    height: 90px;
+    background: #272727;
+    color: #fff;
+  }
+  .footer .inner .footer_bottom {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 90px;
+    text-align: center;
+    position: relative;
+  }
+  .footer .inner .footer_bottom .footer_copy {
+    font-size: 0.825rem;
+  }
+  .footer .inner .footer_bottom .link_company {
+    position: fixed;
+    bottom: 10px;
+    line-height: 1;
+    text-decoration: none;
+    color: #C1C1C1;
+    right: 12%;
+    top: unset;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    z-index: 1;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  .footer .inner .footer_bottom .link_company:hover {
+    opacity: 0.7;
+  }
+  .footer .inner .footer_bottom .link_company img {
+    vertical-align: middle;
+    width: 8%;
+    margin-left: 1.5rem;
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate(0, 5rem);
+              transform: translate(0, 5rem);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate(none);
+              transform: translate(none);
+      visibility: visible;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate(0, 5rem);
+              transform: translate(0, 5rem);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate(none);
+              transform: translate(none);
+      visibility: visible;
+    }
+  }
+  @-webkit-keyframes fadeIn_message_text {
+    from {
+      opacity: 0;
+      -webkit-transform: translate(-50%, 5rem);
+              transform: translate(-50%, 5rem);
+    }
+    to {
+      opacity: 0.84;
+      -webkit-transform: translate(none);
+              transform: translate(none);
+      visibility: visible;
+    }
+  }
+  @keyframes fadeIn_message_text {
+    from {
+      opacity: 0;
+      -webkit-transform: translate(-50%, 5rem);
+              transform: translate(-50%, 5rem);
+    }
+    to {
+      opacity: 0.84;
+      -webkit-transform: translate(none);
+              transform: translate(none);
+      visibility: visible;
+    }
+  }
+  @-webkit-keyframes fadeIn_tit_img {
+    from {
+      -webkit-clip-path: inset(0 100% 0 0);
+      clip-path: inset(0 100% 0 0);
+      opacity: 0;
+    }
+    to {
+      -webkit-clip-path: inset(0);
+      clip-path: inset(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn_tit_img {
+    from {
+      -webkit-clip-path: inset(0 100% 0 0);
+      clip-path: inset(0 100% 0 0);
+      opacity: 0;
+    }
+    to {
+      -webkit-clip-path: inset(0);
+      clip-path: inset(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes check_box {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes check_box {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
