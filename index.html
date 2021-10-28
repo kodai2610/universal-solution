@@ -44,10 +44,10 @@
     <!--mobile-->
     <header class="headerSp fadeIn_animation forSp">
       <div class="headerSp-inner">
-        <div class="headerSp-txtBox">
+        <a class="headerSp-txtBox" style="display:block; text-decoration:none;" href="/">
           <div class="headerSp-ttl1"><img src="./images/headerSp-ttl@2x.png" alt=""></div>
           <div class="headerSp-ttl2">Recruit site</div>
-        </div>
+        </a>
       </div>
       <button class="mobile-menu-icon" onclick="document.getElementById('wrapper').classList.toggle('menu-open');">
         <span></span>
@@ -63,42 +63,42 @@
         </div>
         <ul class="mobile-menu__main">
           <li class="mobile-menu__list">
-            <a href="#">
+            <a href="#message">
               <span class="main-title">Message</span>
             </a>
           </li>
           <li class="mobile-menu__list">
-            <a href="#"><span class="main-title">Service</span>
+            <a href="#service"><span class="main-title">Service</span>
             </a>
           </li>
           <li class="mobile-menu__list">
-            <a href="#">
+            <a href="#benefits">
               <span class="main-title">Benefits</span>
             </a>
           </li>
           <li class="mobile-menu__list">
-            <a href="#">
+            <a href="#environment">
               <span class="main-title">Environment</span>
             </a>
           </li>
           <li class="mobile-menu__list">
-            <a href="#">
+            <a href="#employment">
               <span class="main-title">Employment</span>
             </a>
           </li>
           <li class="mobile-menu__list">
-            <a href="#">
+            <a href="#jobDescription">
               <span class="main-title">job description</span>
             </a>
           </li>
         </ul>
-        <a class="mobile-menu__btn">
+        <a class="mobile-menu__btn" href="#entry">
           <span>Entry</span>
         </a>
-        <div class="mobile-menu__toTop">コーポレートサイトへ</div>
+        <a class="mobile-menu__toTop" href="http://www.usri.co.jp/" style="display:block; text-decoration: none; color:#000;">コーポレートサイトへ</a>
         <div class="mobile-menu__copy">©Copyright 2018-2021 GH Integration Co.,Ltd.</div>
       </nav>
-      <div class="mobile-menu-bg"></div>
+      <div class="mobile-menu-bg" onclick="document.getElementById('wrapper').classList.remove('menu-open');"></div>
     </header>
 
     <main class="main">
@@ -125,8 +125,10 @@
             <span class="message_title_jp">採用メッセージ</span>
           </h2>
           <div class="message_img fadeIn_animation">
-            <img src="./images/typing_pc_left@2x.png" alt="" class="msg_img_01">
-            <img src="./images/typing_pc_right@2x.png" alt="" class="msg_img_02">
+            <img src="./images/typing_pc_left@2x.png" alt="" class="msg_img_01 fadeIn_animation">
+            <img src="./images/typing_pc_right@2x.png" alt="" class="msg_img_02 fadeIn_animation">
+            <!-- <img src="./images/typing_pc_left@2x.png" alt="" class="msg_img_01"> -->
+            <!-- <img src="./images/typing_pc_right@2x.png" alt="" class="msg_img_02"> -->
           </div>
           <div class="message_text fadeIn_animation">
             <p>私たちは『システム開発における”ソリューション”を<br>
@@ -134,7 +136,7 @@
             2013年に創業した当社。<br>
             少数精鋭ながらも、各企業から引く手多数の豊富な<br>
             案件に恵まれています。<br>
-            自由度が高く、実力に応じた報酬と働きがいが手に入る<br>
+            自由度が高く、実力に応じた報酬と働きがいが手に入る<br class="forPc">
             当社で働きたい方は是非ご応募お待ちしております。</p>
           </div>
         </div>
@@ -179,8 +181,10 @@
                     <h3>1</h3>
                   </div>
                   <div class="benefits_text">
-                    <h4><div class="check_box"></div>まずは希望や経験をヒアリング。</h4>
-                    <p>経験やスキル、キャリアプランをしっかりと<br>聞いた上で最適なプロジェクトをお願いします。</p>
+                    <h4>
+                      <div class="check_box"></div>入社後、まずは希望や<br class="forSp">経験をヒアリング。
+                    </h4>
+                    <p>経験やスキル、キャリアプランをしっかりと<br class="forPc">聞いた上で最適なプロジェクトをお願いします。</p>
                   </div>
                 </div>
               </div>
@@ -193,10 +197,10 @@
                     <h3>2</h3>
                   </div>
                   <div class="benefits_text">
-                    <h4><div class="check_box"></div>利益はしっかり社員へ還元。</h4>
-                    <p>弊社では代表自身が事務仕事をこなし、<br>
-                      プレイヤーとしても活躍。<br>
-                      小規模で経費があまりかからない分、<br>
+                    <h4><div class="check_box"></div>利益はしっかり<br class="forSp">社員へ還元。</h4>
+                    <p>弊社では代表自身が事務仕事をこなし、<br class="forPc">
+                      プレイヤーとしても活躍。<br class="forPc">
+                      小規模で経費があまりかからない分、<br class="forPc">
                       利益をきちんと社員に還元しています。</p>
                   </div>
                 </div>
@@ -211,7 +215,7 @@
                   </div>
                   <div class="benefits_text">
                     <h4><div class="check_box"></div>資格取得支援制度あり。</h4>
-                    <p>オラクルマスター取得で祝い金あり（上限30万円）</p>
+                    <p>オラクルマスター取得で祝い金あり<br class="forSp">（上限30万円）</p>
                   </div>
                 </div>
               </div>
@@ -320,7 +324,7 @@
             <div class="title_box">
               <div class="white_box"></div>
               <div class="pink_box pink_box_02"></div>
-              <h2 class="jobDescription_title_en">Job Description</h2>
+              <h2 class="jobDescription_title_en">Job <br class="forSp">Description</h2>
             </div>
           </div>
           <div class="job_info fadeIn_animation">

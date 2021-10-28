@@ -412,19 +412,21 @@ header {
     // width: 70%;
     width: 100%;
     margin: 0 auto;
-    padding: 10rem 0 0;
+    padding: 10rem 0 8rem;
     .inner {
       width: 85%;
       height: 70rem;
       margin: 0 auto;
       position: relative;
       .message_title {
+        margin-bottom: 10px;
         position: relative;
         z-index: 1;
         padding-bottom: 40px;
         text-align: center;
         display: flex;
         opacity: 0;
+        width: max-content;
         &.fadeIn_animation {
           &.fadeIn {
             @include animation(
@@ -463,7 +465,7 @@ header {
       .message_title_jp {
         position: absolute;
         top: 55%;
-        left: 13%;
+        left: 21%;
         transform: none;
         font-size: 1.4rem;
         font-weight: bold;
@@ -473,10 +475,25 @@ header {
         // display: flex;
         // justify-content: space-between;
         // width: 900px;
-        width: auto;
+        width: 100%;
+        height: 1000px;
         // margin: 0 auto;
-        opacity: 0;
+        // opacity: 0;
+        opacity:1;
         &.fadeIn_animation {
+          &.fadeIn {
+            animation: none;
+          }
+        }
+        .msg_img_01 {
+          position: absolute;
+          // right: 0;
+          bottom: 0;
+          left: -90px;
+          opacity:0;
+          width: 35rem;
+          height: auto;
+          &.fadeIn_animation {
           &.fadeIn {
             @include animation (
               $name: fadeIn,
@@ -484,29 +501,36 @@ header {
             );
           }
         }
-        .msg_img_01 {
-          position: absolute;
-          right: 0;
-          width: 35rem;
-          height: auto;
         }
         .msg_img_02 {
-          width: 40rem;
+          // width: 40rem;
+          width: 30rem;
+          right: -80px;
           height: auto;
           position:absolute;
-          left: 0;
+          opacity: 0;
+          // left: 0;
+          &.fadeIn_animation {
+          &.fadeIn {
+            @include animation (
+              $name: fadeIn,
+              $duration: 1.2s
+            );
+          }
+        }
+          
         }
       }
       .message_text {
         z-index: 20;
         background-color:$cWhite;
         position: absolute;
-        top: 85%;
+        top: 55%; 
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 430px;
         height: auto;
         opacity: 0;
+        width: 100%;
         &.fadeIn_animation{
           &.fadeIn {
             @include animation (
@@ -565,6 +589,7 @@ header {
         text-align: center;
         display: flex;
         opacity: 0;
+        width: max-content;
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -600,7 +625,8 @@ header {
         .service_title_jp {
           position: absolute;
           top: 55%;
-          left: 13%;
+          // left: 13%;
+          left: 24%;
           transform: none;
           font-size: 1.4rem;
           font-weight: bold;
@@ -629,6 +655,8 @@ header {
           text-align: left;
           white-space: nowrap;
           line-height: (36 / 18);
+          width: max-content;
+          margin: 0 auto;
           // // line-height: 36px;
           // @include bp('lg') {
           //   font-size: 16px;
@@ -647,7 +675,6 @@ header {
     }
   }
   //ここから
-  
   .benefits {
     padding: 5rem 0 2rem;
     margin-top: 0;
@@ -656,6 +683,7 @@ header {
       width: 100%;
       margin: 0 auto;
       .benefits_title {
+        // width: max-content;
         width: 85%;
         margin: 0 auto;
         position: relative;
@@ -664,6 +692,10 @@ header {
         text-align: center;
         display: flex;
         opacity: 0;
+        
+
+
+
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -672,6 +704,7 @@ header {
           }
         }
         .benefits_box_left {
+          position: relative;
           .pink_box {
             width: 16px;
             height: 16px;
@@ -680,13 +713,15 @@ header {
           .pink_box_01 {
             background-color: $cPink;
             position: absolute;
-            top: 30%;
+            // top: 30%;
+            top: 60%;
             left: 0;
           }
           .pink_box_02 {
             background: linear-gradient(to bottom, $cPink, #fff 50%, #FF9AC0);
             position: absolute;
-            top: 25%;
+            // top: 25%;
+            top: 50%;
             left: 8px;
           }
           .benefits_title_en {
@@ -698,8 +733,10 @@ header {
         }
         .benefits_title_jp {
           position: absolute;
-          top: 55%;
-          left: 13%;
+          // top: 55%;
+          top: 100%;
+          // left: 13%;
+          left: 22%;
           transform: none;
           font-size: 1.4rem;
           font-weight: bold;
@@ -723,20 +760,29 @@ header {
             box-shadow: 9px 8px 20px rgba(204, 204, 204, 0.75);
             display: flex;
             .benefits_number {
-              margin: 0 0 0 1.2rem;
+              // margin: 0 0 0 1.2rem;
+              margin: 0 0 0 0;
+              width: 20%;
               h3 {
-                font-size: 5rem;
+                // font-size: 5rem;
+                text-align: center;
+                font-size: 8rem;
                 color: $cPink;
               }
             }
             .benefits_text {
               text-align: left;
-              width: 90%;
+              // width: 90%;
+              // width: auto;
+              width: 80%;
               h4 {
-                font-size: 1.2rem;
-                margin: 1.2rem 1rem;
+                // font-size: 1.2rem;
+                // margin: 1.2rem 1rem;
+                font-size: 2rem;
+                margin: 2rem 0rem;
                 position: relative;
-                padding-left: 2.5rem;
+                // padding-left: 8rem;
+                padding-left: 6rem;
                 .check_box {
                   content: '';
                   width: 30px;
@@ -746,20 +792,30 @@ header {
                   transform: rotate(-45deg);
                   position: absolute;
                   top: 25%;
-                  left: 0;
+                  // left: 10%;
+                  left: 5%;
                 }
               }
               p {
-                padding-top: 1.2rem;
+                // padding-top: 1.2rem;
+                width: 32rem;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
                 border-top: 1px solid $cBlack;
-                margin: 1.2rem 1rem;
-                }
+                // margin: 1.2rem 1rem;
+                // margin: 0 1rem;
+                margin: 0 0;
+                width: 100%;
+                font-size: 1.8rem;
+                padding-right: 1rem;
+              }
             }
           }
           .benefits_content.benefits_content_03 {
             .benefits_text {
                p {
-                padding-bottom: 2rem;
+                // padding-bottom: 2rem;
+                padding-bottom: 4rem;
               }
             }
           } 
@@ -768,6 +824,8 @@ header {
           // position: relative;
           position: static;
           opacity: 0;
+          margin: 0 auto;
+          max-width: 375px;
           &.fadeIn_animation {
             &.fadeIn {
               @include animation (
@@ -783,6 +841,10 @@ header {
             transform:  none;
             // width: 56%;
             width: 100%;
+            margin: 0 auto;
+            max-width: 375px;
+            padding-left: 0;
+            // padding-left: 3rem;
           }
         }
         .benefits_box02 {
@@ -790,6 +852,8 @@ header {
           position: static;
           text-align: right;
           opacity: 0;
+          margin: 0 auto;
+          max-width: 375px;
           &.fadeIn_animation {
             &.fadeIn {
               @include animation (
@@ -805,12 +869,17 @@ header {
             position: static;
             transform:  none;
             width: 100%;
+            max-width: 375px;
+            margin: 0 auto;
+            padding-left: 0;
           }
         }
         .benefits_box03 {
           // position: relative;
           position: static;
           opacity: 0;
+          max-width: 375px;
+          margin: 0 auto;
           &.fadeIn_animation {
             &.fadeIn {
               @include animation (
@@ -822,6 +891,7 @@ header {
             position: static;
             transform:  none;
             width: 100%;
+            padding-left: 0rem;
           }
         }
       }
@@ -845,6 +915,7 @@ header {
         text-align: center;
         margin-bottom: 3rem;
         opacity: 0;
+        font-size: 1.8rem;
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -854,8 +925,9 @@ header {
         }
       }
       .benefits_items {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        display: block;
         opacity: 0;
         &.fadeIn_animation {
           &.fadeIn {
@@ -867,14 +939,18 @@ header {
         }
         .benefit_item {
           flex-direction: column;
-          width: 270px;
-          height: 160px;
+          // width: 270px;
+          width: 100%;
+          height: 16rem;
           background: #fff;
           box-shadow: 1px 2px 13px rgba(116, 116, 116, 0.75);
           text-align: center;
           .benefit_title {
             font-size: 1.2rem;
+            font-size: 2.4rem;
+            letter-spacing: 0.02em;
             margin: 1.4rem 0;
+            padding-top: 2rem;
             &::before {
               content: '';
               display: inline-block;
@@ -905,6 +981,7 @@ header {
             color: #4D4D4D;
             position: relative;
             margin-bottom: 10px;
+            font-size: 1.8rem;
             span {
               border-bottom: 1px solid #4D4D4D;
               padding: 0 5px 1px;
@@ -917,18 +994,23 @@ header {
 
   .environment {
     padding: 6rem 0 6rem;
-    margin-top: -3rem;
+    // margin-top: -3rem;
+    margin-top: 0;
     .inner {
-      width: 100%;
+      // width: 100%;
+      width: 85%;
+      margin: 0 auto;
       .environment_title {
         position: relative;
         z-index: 1;
         padding-bottom: 40px;
         text-align: center;
         display: flex;
-        width: 70%;
-        margin: 0 auto;
+        // width: 70%;
+        // margin: 0 auto;
+        margin: 0 0;
         opacity: 0;
+        width: max-content;
           &.fadeIn_animation {
             &.fadeIn {
               @include animation (
@@ -956,15 +1038,20 @@ header {
           }
           .environment_title_en {
             color: $cPink;
-            font-size: 50px;
+            // font-size: 50px;
+            font-size: 40px;
             padding-left: 40px;
             letter-spacing: -1.5px;
           }
         }
         .environment_title_jp {
           position: absolute;
-          top: 30%;
-          left: 50%;
+          top: 55%;
+          left: 38%;
+          font-size: 1.4rem;
+          font-weight: bold;
+          // top: 30%;
+          // left: 50%;
           transform: translateX(-50%);          
         }
       }
@@ -1040,11 +1127,13 @@ header {
 
   .employment {
     background-color: $cWhite; 
-    padding: 6rem 0 3rem;
-    margin-top: -3rem;
+    // padding: 6rem 0 3rem;
+    padding: 10rem 0 6rem;
+    // margin-top: -3rem;
+    margin-top: 0rem;
     margin-bottom: -6rem;
     .inner {
-      width: 70%;
+      width: 85%;
       height: auto;
       margin: 0 auto; 
       .employment_title {
@@ -1055,6 +1144,7 @@ header {
         display: flex;
         margin-bottom: 3rem;
         opacity: 0;
+        width: max-content;
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -1082,25 +1172,34 @@ header {
           }
           .employment_title_en {
             color: $cPink;
-            font-size: 50px;
+            // font-size: 50px;
+            font-size: 4rem;
             padding-left: 40px;
           }
         }
         .employment_title_jp {
           position: absolute;
-          top: 30%;
-          left: 50%;
+          // top: 30%;
+          // left: 50%;
+          top: 55%;
+          left: 32%;
           transform: translateX(-50%);
+          font-size: 1.4rem;
+          font-weight: bold;
         }   
       }
       .employment_boxes {
-        width: 830px;
-        height: 500px;
+        // width: 830px;
+        width: 100%;
+        // height: 60rem;
+        height: 55rem;
         margin: 0 auto;
         position: relative;
         .employment_box {
-          width: 440px;
-          height: 400px;
+          // width: 440px;
+          // width: 38rem;
+          width: 34rem;
+          height: 30rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1110,30 +1209,35 @@ header {
               margin-bottom: 2rem;
               .employment_content {
                 span {
-                  font-size: 3rem;
+                  // font-size: 3rem;
+                  font-size: 4.5rem;
                   margin-right: 2rem;
                   font-family: "Acumin Pro";
                 }
                 > p {
-                  font-size: 1.2rem;
+                  // font-size: 1.2rem;
+                  font-size: 1.6rem;
                   display: inline-block;
                 }
               }
             }
             .employment_text {
-              line-height: 2rem;
+              line-height: (24 / 14);
+              font-size: 1.4rem;
             }
           }
           &.employment_box01 {
             background-color: #F2F2F2;
             position: absolute;
             bottom: 0;
-            left: 0;
+            // left: 0;
             transform: rotateZ(-5deg);
             transform-origin: bottom left;
             z-index: 1;
             color: #646464;
             opacity: 0;
+            top: 0;
+            left: -3rem;
             &.fadeIn_animation {
               &.fadeIn {
                 @include animation (
@@ -1146,8 +1250,9 @@ header {
             background-color: $cPink;
             color: $cWhite;
             position: absolute;
-            top: 0;
-            right: 0;
+            top: unset;
+            bottom: 0;
+            right: -3rem;
             transform: rotateZ(5deg);
             transform-origin: bottom right;
             opacity: 0;
@@ -1169,6 +1274,8 @@ header {
     padding: 6rem 0 3rem;
     margin-top: -3rem;
     .inner {
+      // width: 85%;  
+      // margin: 0 auto;
       .jobDescription_title {
         width: 100%;
         height: 150px;
@@ -1183,9 +1290,11 @@ header {
           }
         }
         .title_box {
-          width: 70%;
+          // width: 70%;
+          width: 85%;
           margin: 0 auto;
           position: relative;
+          height: 100%;
           .pink_box {
             width: 16px;
             height: 16px;
@@ -1208,14 +1317,20 @@ header {
           }
           .jobDescription_title_en {
             color: $cWhite;
-            font-size: 50px;
-            line-height: 150px;
-            padding-left: 3rem;
+            // font-size: 50px;
+            font-size: 40px;
+            // line-height: 150px;
+            height: 100%;
+            line-height: 1;
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
           }
         }    
       }
       .job_info {
         max-width: 960px;
+        width: 85%;
         margin: 0 auto;
         opacity: 0;
         &.fadeIn_animation {
@@ -1228,25 +1343,30 @@ header {
         .job_title {
           text-align: center;
           padding: 4rem 0 4rem;
-          font-size: 1.125rem;
+          // font-size: 1.125rem;
+          font-size: 1.4rem;
+          font-weight: bold;
         }
         .job_info_details {
           > dl {
             border-bottom: 1px solid #DEDADA;
             padding: 1.5rem 0;
             font-size: .875rem;
-            display: flex;
+            display: block;
             color: #707070;
             margin: 0 auto;
             > dt {
               line-height: 1.4285rem;
-              width: 28rem;
-              padding: 0 0 0 8.3rem;
-              -ms-flex-negative: 0;
+              width: 100%;
+              padding: 0 0 0 0;
               flex-shrink: 0;
+              font-size: 1.4rem;
+              font-weight: bold;
             }
             > dd {
+              margin-top: 1.5rem;
               width: 100%;
+              font-size: 1.3rem;
             }
           }
         }
@@ -1264,6 +1384,7 @@ header {
         z-index: 1;
         background-color: $cPink;
         opacity: 0;
+        // font-size: 40px;
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -1272,9 +1393,11 @@ header {
           }
         }
         .title_box {
-          width: 70%;
+          // width: 70%;
+          width: 85%;
           margin: 0 auto;
           position: relative;
+          
           .pink_box {
             width: 16px;
             height: 16px;
@@ -1297,16 +1420,19 @@ header {
           }
           .entry_title_en {
             color: $cWhite;
-            font-size: 50px;
+            // font-size: 50px;
             line-height: 150px;
-            padding-left: 3rem;
+            padding-left: 4rem;
+            font-size: 40px;
           }
         }    
       }
       .entry_form_title {
         text-align: center;
         padding: 5rem 0 3rem;
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
+        font-size: 1.4rem;
+        font-weight: bold;
         opacity: 0;
         &.fadeIn_animation {
           &.fadeIn {
@@ -1317,10 +1443,15 @@ header {
         }    
       }
       .entry_desc {
+        width: 85%;
         text-align: center;
         padding-bottom: 2rem;
         color: #707070;
         opacity: 0;
+        margin: 0 auto;
+        letter-spacing: 0.08em;
+        font-size: 1.4rem;
+        line-height: (20 / 14);
         &.fadeIn_animation {
           &.fadeIn {
             @include animation (
@@ -1330,7 +1461,8 @@ header {
         }
       }
       .entry_form {
-        width: 70%;
+        // width: 70%;
+        width: 85%;
         margin: 0 auto;
         opacity: 0;
         &.fadeIn_animation {
@@ -1344,16 +1476,20 @@ header {
           margin: 0 auto 2.8rem;
           max-width: 1200px;
           .frmGroup {
-            display: flex;
-            align-items: flex-start;
+            // display: flex;
+            // align-items: flex-start;
             margin-bottom: 2rem;
-
+            display: block;
             .frmGroup_label {
-              width: 25.4rem;
+              // width: 25.4rem;
+              width: 100%;
               flex-shrink: 0;
               color: #707070;
+              font-size: 1.4rem;
             }
             .frmGroup_input {
+              margin-top: 1.5rem;
+              font-size: 1.2rem;
               width: 100%;                        
               input {
                 padding: 0 2rem;
@@ -1536,25 +1672,32 @@ header {
 .footer {
   .inner {
     width: 100%;
-    height: 65px;
+    // height: 65px;
+    height: 90px;
     background: #272727;
     color: $cWhite;
     .footer_bottom {
-      width: 75%;
+      // width: 75%;
+      width: 100%;
       margin: 0 auto;
-      line-height: 65px;
+      // line-height: 65px;
+      line-height: 90px;
       text-align: center;
       position: relative;
       .footer_copy {
         font-size: 0.825rem;
       }
       .link_company {
+        position: fixed;
+        bottom: 10px;
+        line-height: 1;
         text-decoration: none;
         color: #C1C1C1;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        // position: absolute;
+        right: 12%;
+        top: unset;
+        // transform: translateY(-50%);
+        transform: translateY(0);
         z-index: 1;
         transition: all 0.1s;
         &:hover {

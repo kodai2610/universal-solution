@@ -2491,7 +2491,7 @@ header .header_inner .header_entry span::after {
   .main .message {
     width: 100%;
     margin: 0 auto;
-    padding: 10rem 0 0;
+    padding: 10rem 0 8rem;
   }
   .main .message .inner {
     width: 85%;
@@ -2500,6 +2500,7 @@ header .header_inner .header_entry span::after {
     position: relative;
   }
   .main .message .inner .message_title {
+    margin-bottom: 10px;
     position: relative;
     z-index: 1;
     padding-bottom: 40px;
@@ -2509,6 +2510,9 @@ header .header_inner .header_entry span::after {
     display: -ms-flexbox;
     display: flex;
     opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .main .message .inner .message_title.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -2553,7 +2557,7 @@ header .header_inner .header_entry span::after {
   .main .message .inner .message_title_jp {
     position: absolute;
     top: 55%;
-    left: 13%;
+    left: 21%;
     -webkit-transform: none;
             transform: none;
     font-size: 1.4rem;
@@ -2561,10 +2565,23 @@ header .header_inner .header_entry span::after {
   }
   .main .message .inner .message_img {
     display: block;
-    width: auto;
-    opacity: 0;
+    width: 100%;
+    height: 1000px;
+    opacity: 1;
   }
   .main .message .inner .message_img.fadeIn_animation.fadeIn {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .main .message .inner .message_img .msg_img_01 {
+    position: absolute;
+    bottom: 0;
+    left: -90px;
+    opacity: 0;
+    width: 35rem;
+    height: auto;
+  }
+  .main .message .inner .message_img .msg_img_01.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
     -webkit-animation-duration: 1.2s;
@@ -2580,29 +2597,40 @@ header .header_inner .header_entry span::after {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  .main .message .inner .message_img .msg_img_01 {
-    position: absolute;
-    right: 0;
-    width: 35rem;
-    height: auto;
-  }
   .main .message .inner .message_img .msg_img_02 {
-    width: 40rem;
+    width: 30rem;
+    right: -80px;
     height: auto;
     position: absolute;
-    left: 0;
+    opacity: 0;
+  }
+  .main .message .inner .message_img .msg_img_02.fadeIn_animation.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .main .message .inner .message_text {
     z-index: 20;
     background-color: #fff;
     position: absolute;
-    top: 85%;
+    top: 55%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 430px;
     height: auto;
     opacity: 0;
+    width: 100%;
   }
   .main .message .inner .message_text.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn_message_text;
@@ -2687,6 +2715,9 @@ header .header_inner .header_entry span::after {
     display: -ms-flexbox;
     display: flex;
     opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .main .service .inner .service_title.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -2731,7 +2762,7 @@ header .header_inner .header_entry span::after {
   .main .service .inner .service_title .service_title_jp {
     position: absolute;
     top: 55%;
-    left: 13%;
+    left: 24%;
     -webkit-transform: none;
             transform: none;
     font-size: 1.4rem;
@@ -2769,6 +2800,10 @@ header .header_inner .header_entry span::after {
     text-align: left;
     white-space: nowrap;
     line-height: 2;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
   }
   .main .service .inner::before {
     content: '';
@@ -2816,6 +2851,9 @@ header .header_inner .header_entry span::after {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  .main .benefits .inner .benefits_title .benefits_box_left {
+    position: relative;
+  }
   .main .benefits .inner .benefits_title .benefits_box_left .pink_box {
     width: 16px;
     height: 16px;
@@ -2824,7 +2862,7 @@ header .header_inner .header_entry span::after {
   .main .benefits .inner .benefits_title .benefits_box_left .pink_box_01 {
     background-color: #E20057;
     position: absolute;
-    top: 30%;
+    top: 60%;
     left: 0;
   }
   .main .benefits .inner .benefits_title .benefits_box_left .pink_box_02 {
@@ -2832,7 +2870,7 @@ header .header_inner .header_entry span::after {
     background: -webkit-linear-gradient(top, #E20057, #fff 50%, #FF9AC0);
     background: linear-gradient(to bottom, #E20057, #fff 50%, #FF9AC0);
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 8px;
   }
   .main .benefits .inner .benefits_title .benefits_box_left .benefits_title_en {
@@ -2842,8 +2880,8 @@ header .header_inner .header_entry span::after {
   }
   .main .benefits .inner .benefits_title .benefits_title_jp {
     position: absolute;
-    top: 55%;
-    left: 13%;
+    top: 100%;
+    left: 22%;
     -webkit-transform: none;
             transform: none;
     font-size: 1.4rem;
@@ -2872,21 +2910,23 @@ header .header_inner .header_entry span::after {
     display: flex;
   }
   .main .benefits .inner .benefits_list .container .benefits_content .benefits_number {
-    margin: 0 0 0 1.2rem;
+    margin: 0 0 0 0;
+    width: 20%;
   }
   .main .benefits .inner .benefits_list .container .benefits_content .benefits_number h3 {
-    font-size: 5rem;
+    text-align: center;
+    font-size: 8rem;
     color: #E20057;
   }
   .main .benefits .inner .benefits_list .container .benefits_content .benefits_text {
     text-align: left;
-    width: 90%;
+    width: 80%;
   }
   .main .benefits .inner .benefits_list .container .benefits_content .benefits_text h4 {
-    font-size: 1.2rem;
-    margin: 1.2rem 1rem;
+    font-size: 2rem;
+    margin: 2rem 0rem;
     position: relative;
-    padding-left: 2.5rem;
+    padding-left: 6rem;
   }
   .main .benefits .inner .benefits_list .container .benefits_content .benefits_text h4 .check_box {
     content: '';
@@ -2898,19 +2938,26 @@ header .header_inner .header_entry span::after {
             transform: rotate(-45deg);
     position: absolute;
     top: 25%;
-    left: 0;
+    left: 5%;
   }
   .main .benefits .inner .benefits_list .container .benefits_content .benefits_text p {
-    padding-top: 1.2rem;
+    width: 32rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     border-top: 1px solid black;
-    margin: 1.2rem 1rem;
+    margin: 0 0;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-right: 1rem;
   }
   .main .benefits .inner .benefits_list .container .benefits_content.benefits_content_03 .benefits_text p {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
   .main .benefits .inner .benefits_list .benefits_box01 {
     position: static;
     opacity: 0;
+    margin: 0 auto;
+    max-width: 375px;
   }
   .main .benefits .inner .benefits_list .benefits_box01.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -2933,11 +2980,16 @@ header .header_inner .header_entry span::after {
     -webkit-transform: none;
             transform: none;
     width: 100%;
+    margin: 0 auto;
+    max-width: 375px;
+    padding-left: 0;
   }
   .main .benefits .inner .benefits_list .benefits_box02 {
     position: static;
     text-align: right;
     opacity: 0;
+    margin: 0 auto;
+    max-width: 375px;
   }
   .main .benefits .inner .benefits_list .benefits_box02.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -2960,10 +3012,15 @@ header .header_inner .header_entry span::after {
     -webkit-transform: none;
             transform: none;
     width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 0;
   }
   .main .benefits .inner .benefits_list .benefits_box03 {
     position: static;
     opacity: 0;
+    max-width: 375px;
+    margin: 0 auto;
   }
   .main .benefits .inner .benefits_list .benefits_box03.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -2986,6 +3043,7 @@ header .header_inner .header_entry span::after {
     -webkit-transform: none;
             transform: none;
     width: 100%;
+    padding-left: 0rem;
   }
   .main .benefits .inner .benefits_details {
     background-color: #fff;
@@ -3006,6 +3064,7 @@ header .header_inner .header_entry span::after {
     text-align: center;
     margin-bottom: 3rem;
     opacity: 0;
+    font-size: 1.8rem;
   }
   .main .benefits_examples .inner > h2.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -3024,14 +3083,7 @@ header .header_inner .header_entry span::after {
             animation-fill-mode: forwards;
   }
   .main .benefits_examples .inner .benefits_items {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: block;
     opacity: 0;
   }
   .main .benefits_examples .inner .benefits_items.fadeIn_animation.fadeIn {
@@ -3056,8 +3108,8 @@ header .header_inner .header_entry span::after {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 270px;
-    height: 160px;
+    width: 100%;
+    height: 16rem;
     background: #fff;
     -webkit-box-shadow: 1px 2px 13px rgba(116, 116, 116, 0.75);
             box-shadow: 1px 2px 13px rgba(116, 116, 116, 0.75);
@@ -3065,7 +3117,10 @@ header .header_inner .header_entry span::after {
   }
   .main .benefits_examples .inner .benefits_items .benefit_item .benefit_title {
     font-size: 1.2rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.02em;
     margin: 1.4rem 0;
+    padding-top: 2rem;
   }
   .main .benefits_examples .inner .benefits_items .benefit_item .benefit_title::before {
     content: '';
@@ -3097,6 +3152,7 @@ header .header_inner .header_entry span::after {
     color: #4D4D4D;
     position: relative;
     margin-bottom: 10px;
+    font-size: 1.8rem;
   }
   .main .benefits_examples .inner .benefits_items .benefit_item p span {
     border-bottom: 1px solid #4D4D4D;
@@ -3104,10 +3160,11 @@ header .header_inner .header_entry span::after {
   }
   .main .environment {
     padding: 6rem 0 6rem;
-    margin-top: -3rem;
+    margin-top: 0;
   }
   .main .environment .inner {
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
   }
   .main .environment .inner .environment_title {
     position: relative;
@@ -3118,9 +3175,11 @@ header .header_inner .header_entry span::after {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 70%;
-    margin: 0 auto;
+    margin: 0 0;
     opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .main .environment .inner .environment_title.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -3159,14 +3218,16 @@ header .header_inner .header_entry span::after {
   }
   .main .environment .inner .environment_title .environment_box_left .environment_title_en {
     color: #E20057;
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 40px;
     letter-spacing: -1.5px;
   }
   .main .environment .inner .environment_title .environment_title_jp {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 55%;
+    left: 38%;
+    font-size: 1.4rem;
+    font-weight: bold;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -3252,12 +3313,12 @@ header .header_inner .header_entry span::after {
   }
   .main .employment {
     background-color: #fff;
-    padding: 6rem 0 3rem;
-    margin-top: -3rem;
+    padding: 10rem 0 6rem;
+    margin-top: 0rem;
     margin-bottom: -6rem;
   }
   .main .employment .inner {
-    width: 70%;
+    width: 85%;
     height: auto;
     margin: 0 auto;
   }
@@ -3272,6 +3333,9 @@ header .header_inner .header_entry span::after {
     display: flex;
     margin-bottom: 3rem;
     opacity: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .main .employment .inner .employment_title.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -3310,25 +3374,27 @@ header .header_inner .header_entry span::after {
   }
   .main .employment .inner .employment_title .employment_box_left .employment_title_en {
     color: #E20057;
-    font-size: 50px;
+    font-size: 4rem;
     padding-left: 40px;
   }
   .main .employment .inner .employment_title .employment_title_jp {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 55%;
+    left: 32%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    font-size: 1.4rem;
+    font-weight: bold;
   }
   .main .employment .inner .employment_boxes {
-    width: 830px;
-    height: 500px;
+    width: 100%;
+    height: 55rem;
     margin: 0 auto;
     position: relative;
   }
   .main .employment .inner .employment_boxes .employment_box {
-    width: 440px;
-    height: 400px;
+    width: 34rem;
+    height: 30rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3349,22 +3415,22 @@ header .header_inner .header_entry span::after {
     margin-bottom: 2rem;
   }
   .main .employment .inner .employment_boxes .employment_box .container .employment_box_title .employment_content span {
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin-right: 2rem;
     font-family: "Acumin Pro";
   }
   .main .employment .inner .employment_boxes .employment_box .container .employment_box_title .employment_content > p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     display: inline-block;
   }
   .main .employment .inner .employment_boxes .employment_box .container .employment_text {
-    line-height: 2rem;
+    line-height: 1.71429;
+    font-size: 1.4rem;
   }
   .main .employment .inner .employment_boxes .employment_box.employment_box01 {
     background-color: #F2F2F2;
     position: absolute;
     bottom: 0;
-    left: 0;
     -webkit-transform: rotateZ(-5deg);
             transform: rotateZ(-5deg);
     -webkit-transform-origin: bottom left;
@@ -3372,6 +3438,8 @@ header .header_inner .header_entry span::after {
     z-index: 1;
     color: #646464;
     opacity: 0;
+    top: 0;
+    left: -3rem;
   }
   .main .employment .inner .employment_boxes .employment_box.employment_box01.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -3393,8 +3461,9 @@ header .header_inner .header_entry span::after {
     background-color: #E20057;
     color: #fff;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: unset;
+    bottom: 0;
+    right: -3rem;
     -webkit-transform: rotateZ(5deg);
             transform: rotateZ(5deg);
     -webkit-transform-origin: bottom right;
@@ -3446,9 +3515,10 @@ header .header_inner .header_entry span::after {
             animation-fill-mode: forwards;
   }
   .main .jobDescription .inner .jobDescription_title .title_box {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     position: relative;
+    height: 100%;
   }
   .main .jobDescription .inner .jobDescription_title .title_box .pink_box {
     width: 16px;
@@ -3474,12 +3544,22 @@ header .header_inner .header_entry span::after {
   }
   .main .jobDescription .inner .jobDescription_title .title_box .jobDescription_title_en {
     color: #fff;
-    font-size: 50px;
-    line-height: 150px;
-    padding-left: 3rem;
+    font-size: 40px;
+    height: 100%;
+    line-height: 1;
+    padding-left: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main .jobDescription .inner .job_info {
     max-width: 960px;
+    width: 85%;
     margin: 0 auto;
     opacity: 0;
   }
@@ -3502,29 +3582,31 @@ header .header_inner .header_entry span::after {
   .main .jobDescription .inner .job_info .job_title {
     text-align: center;
     padding: 4rem 0 4rem;
-    font-size: 1.125rem;
+    font-size: 1.4rem;
+    font-weight: bold;
   }
   .main .jobDescription .inner .job_info .job_info_details > dl {
     border-bottom: 1px solid #DEDADA;
     padding: 1.5rem 0;
     font-size: .875rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     color: #707070;
     margin: 0 auto;
   }
   .main .jobDescription .inner .job_info .job_info_details > dl > dt {
     line-height: 1.4285rem;
-    width: 28rem;
-    padding: 0 0 0 8.3rem;
-    -ms-flex-negative: 0;
+    width: 100%;
+    padding: 0 0 0 0;
     -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
             flex-shrink: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
   }
   .main .jobDescription .inner .job_info .job_info_details > dl > dd {
+    margin-top: 1.5rem;
     width: 100%;
+    font-size: 1.3rem;
   }
   .main .entry {
     padding: 6rem 0 2rem;
@@ -3554,7 +3636,7 @@ header .header_inner .header_entry span::after {
             animation-fill-mode: forwards;
   }
   .main .entry .inner .entry_title .title_box {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     position: relative;
   }
@@ -3582,14 +3664,15 @@ header .header_inner .header_entry span::after {
   }
   .main .entry .inner .entry_title .title_box .entry_title_en {
     color: #fff;
-    font-size: 50px;
     line-height: 150px;
-    padding-left: 3rem;
+    padding-left: 4rem;
+    font-size: 40px;
   }
   .main .entry .inner .entry_form_title {
     text-align: center;
     padding: 5rem 0 3rem;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     opacity: 0;
   }
   .main .entry .inner .entry_form_title.fadeIn_animation.fadeIn {
@@ -3609,10 +3692,15 @@ header .header_inner .header_entry span::after {
             animation-fill-mode: forwards;
   }
   .main .entry .inner .entry_desc {
+    width: 85%;
     text-align: center;
     padding-bottom: 2rem;
     color: #707070;
     opacity: 0;
+    margin: 0 auto;
+    letter-spacing: 0.08em;
+    font-size: 1.4rem;
+    line-height: 1.42857;
   }
   .main .entry .inner .entry_desc.fadeIn_animation.fadeIn {
     -webkit-animation-name: fadeIn;
@@ -3631,7 +3719,7 @@ header .header_inner .header_entry span::after {
             animation-fill-mode: forwards;
   }
   .main .entry .inner .entry_form {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     opacity: 0;
   }
@@ -3656,24 +3744,20 @@ header .header_inner .header_entry span::after {
     max-width: 1200px;
   }
   .main .entry .inner .entry_form .frmWrap .frmGroup {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     margin-bottom: 2rem;
+    display: block;
   }
   .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_label {
-    width: 25.4rem;
+    width: 100%;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
     color: #707070;
+    font-size: 1.4rem;
   }
   .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
   }
   .main .entry .inner .entry_form .frmWrap .frmGroup .frmGroup_input input {
@@ -3870,14 +3954,14 @@ header .header_inner .header_entry span::after {
   }
   .footer .inner {
     width: 100%;
-    height: 65px;
+    height: 90px;
     background: #272727;
     color: #fff;
   }
   .footer .inner .footer_bottom {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    line-height: 65px;
+    line-height: 90px;
     text-align: center;
     position: relative;
   }
@@ -3885,13 +3969,15 @@ header .header_inner .header_entry span::after {
     font-size: 0.825rem;
   }
   .footer .inner .footer_bottom .link_company {
+    position: fixed;
+    bottom: 10px;
+    line-height: 1;
     text-decoration: none;
     color: #C1C1C1;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    right: 12%;
+    top: unset;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     z-index: 1;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
